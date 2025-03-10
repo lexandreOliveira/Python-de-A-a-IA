@@ -5,12 +5,15 @@ Este repositório documenta uma jornada completa de aprendizado em Python, desde
 
 ## **Tópicos Abordados**  
 
-### 🟢 [**1. Fundamentos do Python (Básico)**](Fundamentos)
+### 🟢 **1. Fundamentos do Python (Básico)**
 - [Informações Gerais da Linguagem](Fundamentos/gerais.md) 
-- [Sintaxe e tipos de dados](Fundamentos/tiposDados.md)  
+- [Sintaxe e tipos de dados](Fundamentos/TiposDados/tiposDados.md)  
+- [Números](Fundamentos/Numeros/numeros.md)
+- [Strings](Fundamentos/Strings/strings.md)
+- [Operadores](Fundamentos/Operadores/operadores.md)
+- [Listas](Fundamentos/Listas/Listas.md)
 - Estruturas de controle (condicionais e loops)  
 - Funções e escopo de variáveis  
-- Manipulação de strings e listas  
 - [Exemplos e exercícios](Fundamentos/exercicios.py)
 
 ### 🟡 **2. Estruturas de Dados e Algoritmos (Intermediário)**  

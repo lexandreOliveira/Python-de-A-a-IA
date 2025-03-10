@@ -92,6 +92,24 @@ Exemplo:
 
 """
 
+x = int(input("Digite um número: "))
+k = []
+while x > 0:
+    k.append(x % 2) 
+    x = x // 2 
+print("".join(str(bit) for bit in k[::-1]))
+
+binario = input("Digite um número binário: ")  
+decimal = 0  
+potencia = 0  
+
+while binario != "":  
+    bit = int(binario[-1])  
+    decimal += bit * (2 ** potencia)  
+    potencia += 1  
+    binario = binario[:-1]  
+
+print(decimal) 
 
 """
 
@@ -112,9 +130,28 @@ Exemplo:
         True and False
         True or False
         not True
-
-
 """
+
+a = input("Digite True ou False para o primeiro valor: ").strip().capitalize()
+b = input("Digite True ou False para o segundo valor: ").strip().capitalize()
+
+
+if a == "True":
+    a = True
+else:
+    a = False
+
+if b == "True":
+    b = True
+else:
+    b = False
+
+
+print("\nTabela Verdade:")
+print(f"{a} AND {b} → {a and b}")
+print(f"{a} OR {b} → {a or b}")
+print(f"NOT {a} → {not a}")
+print(f"NOT {b} → {not b}")
 
 
 """
@@ -135,6 +172,15 @@ Exemplo:
 
 """
 
+binario = input("Digite um número binário: ")
+x = int(binario, 2)
+contagem = 0
+while x > 0:
+    contagem += x & 1  
+    x >>= 1  
+    print(x)
+print("Número de bits 1:", contagem)
+
 
 """
 
@@ -153,7 +199,31 @@ Exemplo:
     Dado um valor de pixel em binário: pixel = 0b11001010, aplique uma manipulação simples de brilho e contraste usando os operadores.
 
 """
+pixel = 0b11001010  
+     
 
+brilho_1 = pixel | 0b00000001  
+brilho_2 = pixel | 0b00000011  
+brilho_3 = pixel | 0b00001111  
+
+
+escuro_1 = pixel & 0b11111110  
+escuro_2 = pixel & 0b11111100  
+escuro_3 = pixel & 0b11110000  
+
+contraste = pixel ^ 0b11111111
+
+# Exibir resultados
+print(f"Pixel original  : {bin(pixel)} ({pixel})")
+print(f"Brilho +1 bit  : {bin(brilho_1)} ({brilho_1})")
+print(f"Brilho +2 bits : {bin(brilho_2)} ({brilho_2})")
+print(f"Brilho +4 bits : {bin(brilho_3)} ({brilho_3})")
+
+print(f"Escuro -1 bit  : {bin(escuro_1)} ({escuro_1})")
+print(f"Escuro -2 bits : {bin(escuro_2)} ({escuro_2})")
+print(f"Escuro -4 bits : {bin(escuro_3)} ({escuro_3})")
+
+print(f"Contraste: {bin(contraste)[2:].zfill(8)} ({contraste})")
 
 
 """
@@ -174,40 +244,15 @@ Exemplo:
 
 """
 
+x = int(input("Digite um número inteiro: "))  # Entrada do usuário em decimal
+contador = 0  
 
-"""
-
-Atividade 8: Criando um Simulador de Operações de Máquina Virtual (Emulação de Hardware)
-
-Objetivo: Criar um pequeno simulador de operações de máquina virtual que execute instruções binárias utilizando operadores bit a bit.
-
-Instruções:
-
-    Simule uma máquina simples onde você possa adicionar, subtrair ou fazer operações lógicas entre dois números representados em binário.
-    A máquina deve interpretar essas operações e manipular os valores dos registros internos utilizando operadores bit a bit.
-
-Exemplo:
-
-    Entrada: add(0b1010, 0b1100) -> Saída: 0b10110
-    Entrada: sub(0b1010, 0b110) -> Saída: 0b100
-
-"""
+while x:  
+    contador += x & 1  
+    x >>= 1  
+if contador % 2 == 0:
+    print(True, f"pois há {contador} bits 1, um número par")  
+else:
+    print(False, f"pois há {contador} bits 1, um número ímpar")  
 
 
-"""
-
-Atividade 9: Desafio de Manipulação de Máscaras de Bits para Segurança
-
-Objetivo: Trabalhar com segurança de dados usando máscaras de bits.
-
-Instruções:
-
-    Crie uma função que criptografe e descriptografe uma mensagem de texto utilizando uma máscara de bits.
-    A mensagem será convertida em valores binários, e a máscara de bits será aplicada usando o operador ^ para criptografar e descriptografar.
-
-Exemplo:
-
-    Entrada: Mensagem = "Segredo", Máscara = 0b11011001
-    Saída esperada (criptografada): 0b101010101
-
-"""

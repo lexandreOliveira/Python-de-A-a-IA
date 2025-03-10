@@ -144,7 +144,7 @@ Operadores bit a bit são usados ​​para comparar números (binários):
 | Operador | Nome | Descrição | Exemplo |
 |----------|------|-----------|---------|
 | `&`      | AND  | Define cada bit como 1 se ambos os bits forem 1. | `x & y` |
-| `|`      | OR   | Define cada bit como 1 se um dos dois bits for 1. | `x | y` |
+| \|       |OR   | Define cada bit como 1 se um dos dois bits for 1. | `x \| y` |
 | `^`      | XOR  | Define cada bit como 1 se **somente** um dos dois bits for 1. | `x ^ y` |
 | `~`      | NOT  | Inverte todos os bits. | `~x` |
 | `<<`     | Zero fill left shift | Desloca os bits para a esquerda preenchendo com zeros à direita e deixando os bits à esquerda caírem. | `x << 2` |
