@@ -12,6 +12,7 @@ Este repositório documenta uma jornada completa de aprendizado em Python, desde
 - [Strings](Fundamentos/Strings/strings.md)
 - [Operadores](Fundamentos/Operadores/operadores.md)
 - [Listas](Fundamentos/Listas/Listas.md)
+- [Tuplas](Fundamentos/Tuplas/Tuplas.md)
 - Estruturas de controle (condicionais e loops)  
 - Funções e escopo de variáveis  
 - [Exemplos e exercícios](Fundamentos/exercicios.py)

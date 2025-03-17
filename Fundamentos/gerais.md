@@ -38,4 +38,4 @@ print("Hello World!")
 ```
 Em todos os exemplos acima o retorno será uma mensagem exibida em tela para o usuário dizendo: Hello World!!!  (*Garanto que agora a piada sobre outras linguagens fez sentido...)
 
-[Próximo Tópico](tiposDados.md)
+[Próximo Tópico](TiposDados/tiposDados.md) 
