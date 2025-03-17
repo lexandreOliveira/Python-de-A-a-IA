@@ -72,7 +72,7 @@ O interpretador funciona como uma calculadora bem simples: você pode digitar um
 
 ```
 
-Próximo tópico strings [clique aqui](strings.md)
+Próximo tópico strings [clique aqui](/Fundamentos/Strings/strings.md)
 
 
 
