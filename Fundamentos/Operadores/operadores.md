@@ -153,6 +153,6 @@ Operadores bit a bit são usados ​​para comparar números (binários):
 
 #### [Atividades](operadores.py)
 
-#### [Próximo tema](operadores.py)
+
 
 

@@ -11,13 +11,13 @@ Este repositório documenta uma jornada completa de aprendizado em Python, desde
 - [Números](Fundamentos/Numeros/numeros.md)
 - [Strings](Fundamentos/Strings/strings.md)
 - [Operadores](Fundamentos/Operadores/operadores.md)
-- [Listas](Fundamentos/Listas/Listas.md)
-- [Tuplas](Fundamentos/Tuplas/Tuplas.md)
 - Estruturas de controle (condicionais e loops)  
 - Funções e escopo de variáveis  
-- [Exemplos e exercícios](Fundamentos/exercicios.py)
 
 ### 🟡 **2. Estruturas de Dados e Algoritmos (Intermediário)**  
+- [Listas](Intermediario/Listas/Listas.md)
+- [Tuplas](Intermediario/Tuplas/Tuplas.md)
+- [Conjuntos](Intermediario/Conjuntos/conjuntos.md)
 - Listas, dicionários, conjuntos e tuplas  
 - Pilhas, filas, árvores e grafos  
 - Algoritmos de busca (linear, binária) e ordenação (quicksort, mergesort)  
