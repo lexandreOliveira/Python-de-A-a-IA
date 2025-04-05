@@ -11,8 +11,8 @@ Este repositório documenta uma jornada completa de aprendizado em Python, desde
 - [Números](Fundamentos/Numeros/numeros.md)
 - [Strings](Fundamentos/Strings/strings.md)
 - [Operadores](Fundamentos/Operadores/operadores.md)
-- Estruturas de controle (condicionais e loops)  
-- Funções e escopo de variáveis  
+- [Estruturas de controle (condicionais e loops)](Fundamentos/EstruturasControle/estruturas_of_controle.md)  
+- [Funções e escopo de variáveis](Fundamentos/Funcoes/funcoes.md)  
 
 ### 🟡 **2. Estruturas de Dados e Algoritmos (Intermediário)**  
 - [Listas](Intermediario/Listas/Listas.md)
